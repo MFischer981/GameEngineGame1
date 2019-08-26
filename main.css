@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+
+
+
+html {
+  box-sizing: border-box;
+  height: 4000px;
+  width: 4000px;
+  overflow:hidden;
+  /* scroll-behavior: smooth; */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 4000px;
+  width: 4000px;
+  margin: 0;
+   background: url("assets/grass2.jpg");
+  background-size: 100px 100px;
+  background-repeat: repeat;
+}
+
+
+div.player {
+  height: 50px;
+  width: 50px;
+  display: block;
+  background: url("assets/preview_idle.gif");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transition: .2s;
+  top: 0px;
+  left: 0px;
+  transform: translateX(50%) translateY(50%);
+  z-index: 1;
+}
+
+.audioPopUp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: 'Saira Stencil One', cursive;
+  color: white;
+  line-height: 28px;
+  box-shadow: 0 0 20px black;
+  z-index: 101;
+  background: rgba(0,0,0,.75);
+  outline: 200vh rgba(0,0,0,.25) solid;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.audioPopUp button {
+  display: block;
+  padding: 16px 24px;
+  background: black;
+  color: white;
+  font-family: 'Saira Stencil One', cursive;
+  border: none;
+  margin-top: 18px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.block {
+  height: 100px;
+  width: 100px;
+  float: left;
+  background-position: center;
+  background-size: cover;
+}
+
+p {
+  position: fixed;
+  top: 0px;
+  font-family: 'Saira Stencil One', cursive;
+
+  font-size: 24px;
+  color: white;
+  box-shadow: 0 0 20px black;
+  z-index: 101;
+  background: rgba(0,0,0,.75);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+p img {
+ height: 32px; 
+ float: left;
+ margin-top: 4px;
+}
+
+#position {
+  display: none;
+}
+
+#timer {
+  left: 20px;
+}
+
+#bananas {
+  right: 20px;
+}
+
+#ammo {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.banana {
+  height: 50px;
+  width: 50px;
+  background: url("assets/gem.gif");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+    transform: translateX(50%) translateY(50%);
+}
+
+.crate {
+  height: 50px;
+  width: 50px;
+  background: url("assets/crate.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+    transform: translateX(50%) translateY(50%);
+}
+
+.tree {
+  position: absolute;
+  display: block;
+  height: 200px;
+  width: 200px;
+  background: url("assets/palmtree.png");
+  background-position: center;
+  background-size: contain;
+  opacity: .675;
+  z-index: 100;
+}
+
+.tree2 {
+  position: absolute;
+  display: block;
+  height: 200px;
+  width: 200px;
+  background: url("assets/tree2.png");
+  background-position: center;
+  background-size: contain;
+    opacity: .675;
+    z-index: 100;
+}
+
+.dirt {
+  position: absolute;
+  display: block;
+  height: 100px;
+  width: 100px;
+  background: url("assets/dirt.png");
+  mix-blend-mode: screen;
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+}
+
+.grass {
+  position: absolute;
+  display: block;
+  height: 100px;
+  width: 100px;
+  background: url("assets/foliage8.png");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.rock {
+  position: absolute;
+  display: block;
+  height: 100px;
+  width: 100px;
+  background: url("assets/rock2.png");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.stump {
+  position: absolute;
+  display: block;
+  height: 100px;
+  width: 100px;
+  background: url("assets/stump.png");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.barrels {
+  position: absolute;
+  display: block;
+  height: 100px;
+  width: 100px;
+  background: url("assets/barrels.png");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
